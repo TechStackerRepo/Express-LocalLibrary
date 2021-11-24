@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   });
 
   router.get('/cool/nice', function(req, res, next) {
-    res.send('you are so nice');
+    res.send('you are so nice of days');
  });
 
 

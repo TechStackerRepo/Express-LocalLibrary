@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+    each author in author_list
+      li
+        a(href=author.url) #{author.name}
+         |  (#{author.lifespan})
+        //- (Date Of Birth: #{author.due_back_formatted}})
+
+    else
+      li There are no authors.
